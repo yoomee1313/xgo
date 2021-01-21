@@ -38,12 +38,12 @@ a single command to compile a Go package to various platforms and architectures.
 Although you could build the container manually, it is available as an automatic
 trusted build from Docker's container registry (not insignificant in size):
 
-    docker pull karalabe/xgo-latest
+    docker pull klaytn/xgo-latest
 
 To prevent having to remember a potentially complex Docker command every time,
 a lightweight Go wrapper was written on top of it.
 
-    go get github.com/karalabe/xgo
+    go get github.com/klaytn/xgo
 
 ## Usage
 
@@ -226,7 +226,7 @@ supported by the requested Android platform version. For iOS frameworks `xgo`
 will bundle armv7 and arm64 by default, and also the x86_64 simulator builds
 if the iPhoneSimulator.sdk was injected by the user:
 
-* Create a new docker image based on xgo: `FROM karalabe/xgo-latest`
+* Create a new docker image based on xgo: `FROM klaytn/xgo-latest`
 * Inject the simulator SDK: `ADD iPhoneSimulator9.3.sdk.tar.xz /iPhoneSimulator9.3.sdk.tar.xz`
 * Bootstrap the simulator SDK: `$UPDATE_IOS /iPhoneSimulator9.3.sdk.tar.xz`
 
