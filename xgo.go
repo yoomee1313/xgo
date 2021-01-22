@@ -39,7 +39,7 @@ func init() {
 }
 
 // Cross compilation docker containers
-var dockerBase = "karalabe/xgo-base"
+//var dockerBase = "karalabe/xgo-base"
 var dockerDist = "klaytn/xgo-"
 
 // Command line arguments to fine tune the compilation
